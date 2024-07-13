@@ -1,0 +1,56 @@
+@media (max-width: 1099px) {
+  .promo-product-name {
+    font-size: 25px;
+  }
+  .promo-content {
+    padding: 0 20px;
+  }
+  .promo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 45%;
+    padding: 15px;
+    min-height: 300px;
+  }
+  .promo-card:first-child {
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .promo-card-product-specification-text {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 14px 25px;
+  }
+  .compostion-content {
+    padding: 0 20px;
+  }
+  .composition-elements-element {
+    border-radius: 50%;
+    width: 70%;
+    padding: 15px;
+    height: 50px;
+  }
+  .composition-elements-element-text {
+    font-size: 16px;
+  }
+  .composition-elements-element::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  .composition-product {
+    width: 25%;
+    height: 180px;
+    align-self: center;
+    border-radius: 50%;
+    background-size: 40%;
+  }
+}
