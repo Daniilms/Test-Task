@@ -23,7 +23,7 @@
     font-size: 18px;
   }
 
-  .button {
+  .link {
     padding: 14px 25px;
   }
   .compostion-content {
@@ -53,7 +53,7 @@
     border-radius: 50%;
     background-size: 40%;
   }
-  .composition-product-button {
+  .composition-product-link {
     font-size: 13px;
     padding: 7px 20px;
   }
@@ -67,7 +67,7 @@
   .advertisement-content-card-text {
     font-size: 15px;
   }
-  .advertisement-content-card-button {
+  .advertisement-content-card-link {
     margin: 15px 0 0 0;
     padding: 12px 20px;
   }
@@ -97,7 +97,7 @@
   .order-content-form-element-tooltip {
     font-size: 12px;
   }
-  .order-content-form-element-button {
+  .order-content-form-element-link {
     font-size: 15px;
     margin: 20px 0 0 0;
     padding: 10px 20px;
@@ -158,7 +158,7 @@
     border-radius: 50%;
     background-size: 50%;
   }
-  .composition-product-button {
+  .composition-product-link {
     font-size: 13px;
     padding: 7px 12px;
     white-space: nowrap;
