@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/media.css" />
     <title>LvlUp!</title>
   </head>
+
   <body>
     <main>
       <section class="promo">
@@ -72,6 +81,105 @@
           </div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="reviews-swiper swiper">
+          <!-- Additional required wrapper -->
+          <div class="reviews-swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-1.jpg" alt="" />
+            </div>
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-2.jpeg" alt="" />
+            </div>
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-3.jpg" alt="" />
+              <div class="subtitle">Jack</div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Blanditiis veniam similique illum nihil soluta? Sequi quaerat
+                aliquam nulla. Temporibu
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="advertisement">
+        <div class="container">
+          <ul class="advertisement-content">
+            <li class="advertisement-content-card"></li>
+            <li class="advertisement-content-card">
+              <h2 class="advertisement-content-card-title">
+                Level
+                <span class="advertisement-content-card-title-decoration"
+                  >Up!</span
+                >
+              </h2>
+              <p class="advertisement-content-card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ratione commodi nam et iusto corporis dolore dolorem. Tempora
+                error ea ratione magnam aspernatur reiciendis. Eum, veniam fugit
+                totam sit tenetur distinctio!
+              </p>
+              <button class="button advertisement-content-card-button">
+                Buy Now
+              </button>
+            </li>
+          </ul>
+          <ul class="advertisement-about">
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "vertical",
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
 </html>
