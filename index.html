@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+    <title>LvlUp!</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="promo">
+        <video
+          src="./video/abstract-line2.mp4"
+          class="promo-video"
+          autoplay
+          loop
+        ></video>
+        <div class="container">
+          <h1 class="title promo-product-name">
+            Level
+            <span class="title-decoration promo-product-name-decoration"
+              >Up</span
+            >
+          </h1>
+          <ul class="promo-content">
+            <li class="promo-card"></li>
+            <li class="promo-card">
+              <ul class="promo-card-product-specification">
+                <li class="promo-card-product-specification-text">
+                  Lorem Ipsum Lorem IpsumLo
+                </li>
+                <li class="promo-card-product-specification-text">
+                  Lorem IpsumLorem Ipsumad
+                </li>
+                <li class="promo-card-product-specification-text">
+                  Lorem IpsumLorem Iasdad
+                </li>
+              </ul>
+              <a
+                href="#order"
+                class="button promo-card-product-specification-button"
+              >
+                Buy Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="composition">
+        <div class="container">
+          <div class="compostion-content">
+            <ul class="composition-elements">
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+            </ul>
+            <div class="composition-product">
+              <a href="#order" class="button composition-product-button"
+                >Buy Now</a
+              >
+            </div>
+            <ul class="composition-elements">
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+              <li class="composition-elements-element">
+                <p class="composition-elements-element-text">Lorem</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews-swiper swiper">
+          <!-- Additional required wrapper -->
+          <div class="reviews-swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-1.jpg" alt="review-1" />
+              <div class="slide-content">
+                <h2>Margo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-2.jpeg" alt="review-2" />
+              <div class="slide-content">
+                <h2>Clyde</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+            <div class="reviews-swiper-slide swiper-slide">
+              <img src="./img/review-3.jpg" alt="review-3" />
+              <div class="slide-content">
+                <h2>Jack</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="advertisement">
+        <div class="container">
+          <ul class="advertisement-content">
+            <li class="advertisement-content-card"></li>
+            <li class="advertisement-content-card">
+              <h3 class="title advertisement-content-card-title">
+                Level
+                <span
+                  class="title-decoration advertisement-content-card-title-decoration"
+                  >Up!</span
+                >
+              </h3>
+              <p class="advertisement-content-card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ratione commodi nam et iusto corporis dolore dolorem. Tempora
+                error ea ratione magnam aspernatur reiciendis. Eum, veniam fugit
+                totam sit tenetur distinctio!
+              </p>
+              <a href="#order" class="button advertisement-content-card-button">
+                Buy Now
+              </a>
+            </li>
+          </ul>
+          <ul class="advertisement-about">
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+            <li class="advertisement-about-element">
+              <p class="advertisement-about-element-text">
+                Lorem ipsum dolor sit
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <h4 class="title order-title">
+            Level
+            <span class="title-decoration order-title-decoration">Up!</span>
+          </h4>
+          <div class="order-timer">
+            The discount will remain active for:
+            <span class="order-timer-decoration" id="timer">30:00</span>
+          </div>
+          <div class="order-content">
+            <form action="submit" class="order-content-form" id="order">
+              <div class="order-content-form-element">
+                <input
+                  placeholder="Jake Newborn"
+                  id="name"
+                  type="text"
+                  class="order-content-form-element-input"
+                />
+                <div class="order-content-form-element-tooltip">
+                  Jake Newborn
+                </div>
+                <label
+                  for="name"
+                  class="order-content-form-element-label"
+                ></label>
+              </div>
+              <div class="order-content-form-element">
+                <input
+                  placeholder="Your Numbers"
+                  id="phone"
+                  type="number"
+                  class="order-content-form-element-input"
+                  min="0"
+                  max="9"
+                />
+                <div class="order-content-form-element-tooltip">
+                  8(999)-99-99
+                </div>
+                <label
+                  for="phone"
+                  class="order-content-form-element-label"
+                ></label>
+              </div>
+              <div class="order-content-form-element">
+                <a class="button order-content-form-element-button"> order </a>
+              </div>
+            </form>
+            <div class="order-content-product">
+              <div class="order-content-product-price">
+                <p class="order-content-product-price-old">300$</p>
+                <h5 class="order-content-product-price-new">199$</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+
+    /* Функция таймера, можно ее убрать, если она не нужна, 
+    как сделать обратный отсчет без JS я не знаю  */
+
+    function startTimer(duration, display) {
+      let timer = duration,
+        minutes,
+        seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      let thirtyMinutes = 60 * 30,
+        display = document.querySelector("#timer");
+      startTimer(thirtyMinutes, display);
+    };
+  </script>
+</html>
