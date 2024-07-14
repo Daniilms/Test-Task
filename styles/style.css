@@ -88,7 +88,8 @@ body {
 .promo-card-product-specification-text:not(:first-child) {
   margin: 20px 0 0 0;
 }
-.link {
+.link,
+.button {
   display: inline-block;
   font-size: 16px;
   padding: 15px 45px;
@@ -377,7 +378,7 @@ body {
   opacity: 1;
 }
 
-.order-content-form-element-link {
+.order-content-form-element-button {
   text-transform: uppercase;
 }
 .order-content-product {

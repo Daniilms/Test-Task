@@ -196,12 +196,16 @@
               <div class="order-content-form-element">
                 <input
                   placeholder="Your Numbers"
-                  id="phone"
                   type="number"
-                  class="order-content-form-element-input"
+                  pattern="[0-9]*"
+                  inputmode="numeric"
+                  id="phone"
                   min="0"
                   max="9"
+                  class="order-content-form-element-input"
                 />
+                <!-- oninput="this.value = this.value.replace(/[^0-9]/g, '');" 
+                 Почему-то в Mozilla можно вводить буквы в number-type, помогает только этот скрипт -->
                 <div class="order-content-form-element-tooltip">
                   8(999)-99-99
                 </div>
@@ -211,7 +215,9 @@
                 ></label>
               </div>
               <div class="order-content-form-element">
-                <a class="link order-content-form-element-link"> order </a>
+                <button class="button order-content-form-element-button">
+                  order
+                </button>
               </div>
             </form>
             <div class="order-content-product">
